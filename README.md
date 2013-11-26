@@ -1,4 +1,4 @@
-username.github.io
-==================
+Octopress Blog
+==============
 
 Octopress Blog
