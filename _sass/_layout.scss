@@ -1,0 +1,152 @@
+body {
+  background-color: #FFDE01;
+  font-family: 'Montserrat',arial,helvetica,sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  color: white;
+  float: right;
+}
+
+nav a {
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  background-color: black;
+  padding: 1em 2em;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  transition: background-color .5s ease-out;
+
+  &:hover {
+    background-color: #F06016;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+#main-wrapper {
+  margin: 0 auto;
+  max-width: 65%;
+}
+
+#header {
+  margin-bottom: 3em;
+  
+  h1 {
+    border-radius: 0 0 100% 100%;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6) , -1px -1px 1px rgba(253, 255, 254, 0.67);
+    padding: 0 .4em .4em;
+    color: #FFDE01;
+    background-color: black;
+    margin: 0;
+    float: left;
+    
+    a {
+      color: inherit;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.blog-index {
+  padding: 0.5em 0;
+  position: relative;
+  top: 3em;
+}
+
+article.post {
+  padding: 2em 2.2em;
+  background-color: white;
+  color: black;
+  margin-bottom: 2em;
+  box-shadow: 0px 1px 4px gray;
+
+  h2 {
+    font-size: 1.6em;
+    margin-top: 0.2em;
+  }
+}
+
+section.archive {
+  h3 {
+    display: inline-block;
+    margin: 0.2em 0.3em 0.4em 0;
+  }
+  
+  .meta {
+    font-size: 0.8em;
+    font-style: italic;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a.color-link {
+  color: #FF0970;
+}
+
+.entry-title {
+  font-size: 1.8em;
+  color: black;
+  background-color: #13BBBD;
+  padding: 4px 6px;
+}
+
+.post-content {
+  font-family: 'Open Sans';
+  font-size: 1.3em;
+}
+
+.meta {
+  color: rgb(152, 152, 152);
+}
+
+.post-list {
+  margin: 0;
+}
+
+.wrapper {
+  margin-bottom: 3em;
+  h1 {
+    border-bottom: 2px dotted rgb(95, 95, 95);
+  }
+}
+
+@media (max-width: 1000px) {
+  #header h1 {
+    border-radius: 0;
+    padding-bottom: 0.2em;
+    font-size: 3em;
+  }
+
+  #header h1, nav, nav {
+    display: block;
+    float: none;
+  }
+
+  #header a {
+    display: block;
+    margin-top: 0.3em;
+    font-size: 1.2em;
+  }
+
+  section.archive {
+    margin-bottom: 1em;
+    h3 {
+      display: block;
+    }
+  }
+}

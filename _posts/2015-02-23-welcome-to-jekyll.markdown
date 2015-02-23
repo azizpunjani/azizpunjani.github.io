@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "New blog"
+date:   2015-02-22 15:52:57
+categories: blog
+---
+
+I finally took some time out this weekend to create a new blog. I was initially using [octopress](http://octopress.org/) but it had way more features than I needed. I decided to go with [Jekyll](http://jekyllrb.com/) which is a barebones blogging engine.
+
+<!--more-->
+
+Since I created my theme/layout from scratch, I was able to get going much quicker with Jekyll. I chose 
+some vibrant colors for the theme because I'm experiment with colors that I don't use often. I do like the yellow and black combo and will probably stick with it, for now.
+
+There are a few other subtle CSS3 effects, if you haven't already noticed, there's a `border-radius: 0 0 100% 100%;` on the header as seen in the screen shot below.
+
+![Ellipse header](/images/logo_round.jpg)
+
+ That gives it a nice curved look on the bottom. If a browser doesn't support the `border-radius` property. It gracefully degrades, as seen in the image below.
+
+ ![My helpful screenshot](/images/logo_square.jpg)
+
+ I was debating over which font to use for the name, It was a close call between [Lobster](https://www.google.com/fonts/specimen/Lobster) and [Kaushan Script](https://www.google.com/fonts/specimen/Kaushan+Script). I ended up picking the latter.
+
+ And before you ask, yes it is responsive! I only needed one breakpoint to get the nav to cooperate.
+
+ There's a lot more I would like to add to the blog but figured incrementally adding features as I go, would be the best approach.
+
