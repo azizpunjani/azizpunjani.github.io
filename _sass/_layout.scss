@@ -7,6 +7,7 @@ body {
 }
 
 nav {
+  @include animation(show 1.5s ease-in 1);
   color: white;
   float: right;
 }
@@ -19,7 +20,7 @@ nav a {
   color: white;
   display: inline-block;
   text-align: center;
-  transition: background-color .5s ease-out;
+  transition: background-color 0.8s ease-out;
 
   &:hover {
     background-color: #F06016;
@@ -37,6 +38,7 @@ nav a {
   margin-bottom: 3em;
   
   h1 {
+    @include animation(show 0.5s ease-in 1);
     border-radius: 0 0 100% 100%;
     font-family: 'Kaushan Script', cursive;
     font-size: 4em;
@@ -45,9 +47,12 @@ nav a {
     padding: 0 .4em .4em;
     color: #FFDE01;
     background-color: black;
-    margin: 0;
     float: left;
+    margin: 0;
     
+    &:hover {
+
+    }
     a {
       color: inherit;
       &:hover {
@@ -71,7 +76,7 @@ article.post {
   box-shadow: 0px 1px 4px gray;
 
   h2 {
-    font-size: 1.6em;
+    font-size: 2em;
     margin-top: 0.2em;
   }
 }
@@ -119,12 +124,14 @@ a.color-link {
 }
 
 .wrapper {
+  @include animation(show 1.2s ease-in 1);
   margin-bottom: 3em;
   h1 {
     border-bottom: 2px dotted rgb(95, 95, 95);
   }
 }
 
+/**** Media Queries ****/
 @media (max-width: 1000px) {
   #header h1 {
     border-radius: 0;
@@ -132,7 +139,7 @@ a.color-link {
     font-size: 3em;
   }
 
-  #header h1, nav, nav {
+  #header h1, nav {
     display: block;
     float: none;
   }
@@ -149,4 +156,14 @@ a.color-link {
       display: block;
     }
   }
+}
+/**** Animation Frames ****/
+@include key-frames(show) {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
 }
