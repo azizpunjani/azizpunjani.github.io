@@ -5,6 +5,14 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
+body {
+  background-color: #FFDE01;
+  font-family: 'Montserrat',arial,helvetica,sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
 pre,
 code {
     font-size: 15px;
