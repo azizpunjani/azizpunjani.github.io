@@ -45,3 +45,36 @@ img {
   max-width: 100%;
 }
 
+@mixin css3-prefix($property, $value) {
+    -webkit-#{$property}: #{$value};
+      -moz-#{$property}:  #{$value};
+       -ms-#{$property}:  #{$value};
+        -o-#{$property}:  #{$value};
+           #{$property}:  #{$value};
+}
+
+@mixin key-frames($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }  
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }  
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  @include css3-prefix('animation', $str);
+}
+
+@mixin border-radius($radius) {
+  @include css3-prefix('border-radius', $radius);
+}
