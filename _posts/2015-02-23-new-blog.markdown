@@ -16,7 +16,7 @@ There are a few other subtle CSS3 effects, if you haven't already noticed, there
 
 ![Ellipse header](/images/logo_round.jpg)
 
-That gives it a nice curved look on the bottom. If a browser doesn't support the `border-radius` property. It gracefully degrades, as seen in the image below.
+That gives it a nice curved look on the bottom. If a browser doesn't support the `border-radius` property, it gracefully degrades, as seen in the image below.
 
 ![My helpful screenshot](/images/logo_square.jpg)
 
