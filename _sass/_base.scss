@@ -19,6 +19,11 @@ code {
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
+    overflow-x: auto;
+}
+
+figure.highlight {
+    margin-left: 0px;
 }
 
 code {
@@ -27,7 +32,6 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
 
     > code {
         border: 0;
@@ -57,15 +61,18 @@ img {
   @-webkit-keyframes #{$animation-name} {
     @content;
   }
+
   @-moz-keyframes #{$animation-name} {
     @content;
-  }  
+  }
+
   @-ms-keyframes #{$animation-name} {
     @content;
   }
   @-o-keyframes #{$animation-name} {
     @content;
-  }  
+  }
+
   @keyframes #{$animation-name} {
     @content;
   }

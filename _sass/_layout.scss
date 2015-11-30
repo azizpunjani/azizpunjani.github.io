@@ -17,18 +17,19 @@ nav a {
   &:hover {
     background-color: #F06016;
     color: white;
+
     text-decoration: none;
   }
 }
 
 #main-wrapper {
   margin: 0 auto;
-  max-width: 65%;
+  max-width: 50em;
 }
 
 #header {
   margin-bottom: 3em;
-  
+
   h1 {
     @include animation(show 0.5s ease-in 1);
     border-radius: 0 0 100% 100%;
@@ -41,7 +42,7 @@ nav a {
     background-color: black;
     float: left;
     margin: 0;
-    
+
     &:hover {
 
     }
@@ -78,7 +79,7 @@ section.archive {
     display: inline-block;
     margin: 0.2em 0.3em 0.4em 0;
   }
-  
+
   .meta {
     font-size: 0.8em;
     font-style: italic;
@@ -102,7 +103,7 @@ a.color-link {
   padding: 4px 6px;
 }
 
-.post-content {
+.post-content p {
   font-family: 'Open Sans';
   font-size: 1.3em;
 }
