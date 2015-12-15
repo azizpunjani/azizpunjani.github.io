@@ -2,12 +2,12 @@
 layout: post
 title:  "ES6: let and const"
 date:   2015-11-10 18:52:57
-categories: javascript ecmascript
+categories: javascript ecmascript6
 ---
 
-ES6 introduces the new `let` and `const` keywords. Up until the ES5, Javascript only had function scope and global scope. The `let` keyword makes it possible to declare block scoped variables. The `const` prevents a variable from being reassigned.
+ES6 introduces the new `let` and `const` keywords. Up until the ES5, Javascript only had function scope and global scope. The `let` keyword makes it possible to declare block scoped variables.
 
-This blog post talks about function scope, block scope and how it relates to the `const` and `let` keywords. It also briefly discusses
+This blog post explores function scope, block scope and how it relates to the `let` and `const` keywords. It also briefly discusses
 something known as the Temporal Dead Zone (TDZ).
 
 <!--more-->
@@ -196,7 +196,7 @@ Simply put, TDZ is the point in code where the variable is in scope but uninitia
 
 {%endhighlight %}
 
-Let's take a look at what happens when we use the `var` keyword for the same code above.
+Let's take a look at what happens when we use the `var` keyword for similar code above.
 
 {%highlight javascript%}
 
@@ -211,7 +211,7 @@ As you see, the code above does *not* throw a ReferenceError, this is expected b
 declared using `let` and `const` are hoisted as well, but cannot be accessed until the `let` or `const` statement is evaulated.
 
 ### Migrating from `var` to `let` and `const`
-We recently updated our open source repositories to use the `const` and `let` keywords.
+We recently updated our open source repositories to use the `let` and `const` keywords.
 Our approach was simple, replace `var` with `const` unless the variable is reassigned at a later point in the code, in which case, the variable should be declared using `let`.
 
 There's [varying](https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/ch2.md#const-or-not) [opinions](https://davidwalsh.name/for-and-against-let),
