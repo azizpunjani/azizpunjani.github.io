@@ -24,24 +24,23 @@ function outer() {
       var lastName = 'Punjani';
 
       if ( true ) {
-          var temp = 'temp';
+          var middleInitial = 'S';
       }
 
       console.log( firstName );
-      console.log( temp );
+      console.log( middleInitial );
   }
 
   inner();
   console.log( lastName );
 }
 
-
 outer();
 
 // Output
 
 // Aziz
-// temp
+// S
 // ReferenceError: lastName is not defined
 
 {% endhighlight %}
@@ -51,7 +50,7 @@ throughout the function.
 
 The reason that `firstName` is accessible within the inner function has more to do with [lexical scope](https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scoping) which is outside the scope of this blog post (pun intended).
 
-Notice how the variable `temp` is accessible outside of the if block within the inner function? We will soon learn how to limit the scope of `temp` to the if block.
+Notice how the variable `middleInitial` is accessible outside of the if block within the inner function? We will soon learn how to limit the scope of `middleInitial` to the if block.
 
 ### Block
 What constitutes a block? A block is any code within curly braces that's <em>not</em> an object. Note that loop variables are considered to be part of the loop block. Below are examples of blocks.
