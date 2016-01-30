@@ -10,10 +10,12 @@ ES6 introduces the new `let` and `const` keywords. Up until the ES5, Javascript 
 This blog post explores function scope, block scope and how it relates to the `let` and `const` keywords. It also briefly discusses
 something known as the Temporal Dead Zone (TDZ).
 
+Before we get to block scope let's talk a little about function scope.
+
 <!--more-->
 
 ### Function Scope
-Variables declared within a function using the `var` keyword, that are only accessible within the function, are said to have function scope.
+Variables declared within a function using the `var`, `let` or `const` keywords, that are only accessible within the function, are said to have function scope.
 
 {%highlight javascript %}
 
