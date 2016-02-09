@@ -6,7 +6,6 @@ ul, ol, dl, figure,
 }
 
 body {
-  background-color: #FFDE01;
   font-family: 'Montserrat',arial,helvetica,sans-serif;
   font-size: 1em;
   margin: 0;
@@ -31,7 +30,7 @@ code {
 }
 
 pre {
-    padding: 8px 12px;
+    padding: 1em;
 
     > code {
         border: 0;
@@ -49,12 +48,12 @@ img {
   max-width: 100%;
 }
 
-@mixin css3-prefix($property, $value) {
-    -webkit-#{$property}: #{$value};
-      -moz-#{$property}:  #{$value};
-       -ms-#{$property}:  #{$value};
-        -o-#{$property}:  #{$value};
-           #{$property}:  #{$value};
+@mixin css3-prefix($property, $args...) {
+    -webkit-#{$property}: $args;
+      -moz-#{$property}:  $args;
+       -ms-#{$property}:  $args;
+        -o-#{$property}:  $args;
+           #{$property}:  $args;
 }
 
 @mixin key-frames($animation-name) {
@@ -84,4 +83,15 @@ img {
 
 @mixin border-radius($radius) {
   @include css3-prefix('border-radius', $radius);
+}
+
+@mixin linear-gradient($args...) {
+  background-image: -o-linear-gradient($args);
+  background-image: -moz-linear-gradient($args);
+  background-image: -webkit-linear-gradient($args);
+  background-image: linear-gradient($args);
+}
+
+@mixin transition($str) {
+  @include css3-prefix('transition', $str);
 }

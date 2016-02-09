@@ -3,7 +3,7 @@ layout: default
 title: 'Aziz Punjani - Blog'
 ---
 {% for post in site.posts %}
-  <article class="post">
+  <article class="post rounded-corners">
     <h2>{{ post.title }}</h2>
     <span class="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     <div class="post-content">{{ post.excerpt }}</div>
