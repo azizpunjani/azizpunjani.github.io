@@ -5,7 +5,7 @@ date:   2015-11-10 18:52:57
 categories: javascript ecmascript6
 ---
 
-ES6 introduces the new `let` and `const` keywords. Up until the ES5, Javascript only had function scope and global scope. The `let` keyword makes it possible to declare block scoped variables.
+ES6 introduces the new `let` and `const` keywords. Up until ES5, Javascript only had function scope and global scope. The `let` keyword makes it possible to declare block scoped variables.
 
 This blog post explores function scope, block scope and how it relates to the `let` and `const` keywords. It also briefly discusses
 something known as the Temporal Dead Zone (TDZ).
